@@ -10,7 +10,7 @@ hooks:
       runas: root
   BeforeInstall:
     - location: aws/scripts/before-install.sh
-      timeout: 300
+      timeout: 120 
       runas: root
   AfterInstall:
     - location: aws/scripts/after-install.sh
