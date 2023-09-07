@@ -6,7 +6,7 @@ files:
 hooks:
   ApplicationStop:
     - location: aws/scripts/application-stop.sh
-      timeout: 300
+      timeout: 120
       runas: root
   BeforeInstall:
     - location: aws/scripts/before-install.sh
@@ -14,13 +14,13 @@ hooks:
       runas: root
   AfterInstall:
     - location: aws/scripts/after-install.sh
-      timeout: 300
+      timeout: 120
       runas: root
   ApplicationStart:
     - location: aws/scripts/application-start.sh
-      timeout: 300
+      timeout: 120
       runas: root
   ValidateService:
     - location: aws/scripts/validate-service.sh
-      timeout: 300
+      timeout: 120
       runas: root
